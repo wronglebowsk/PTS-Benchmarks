@@ -1,9 +1,9 @@
-# Universal Hardware & LLM Benchmarks (PTS-Benchmarks)
+# Universal Hardware Benchmarks (PTS-Benchmarks)
 
-This repository documents the testing methodology and accumulated results for comparing various mobile hardware architectures (Apple Silicon, Intel x86_64, AMD APUs, and gaming handhelds). It tracks raw hardware metrics via the Phoronix Test Suite (PTS) and specialized AI generation speeds using `llama.cpp` backends.
+This repository documents the testing methodology and accumulated results for comparing raw hardware metrics across various mobile architectures (Apple Silicon, Intel x86_64, AMD APUs) exclusively using the Phoronix Test Suite (PTS).
 
 ## 1. Automated Hardware Benchmark Methodology
-To accurately compare raw CPU and memory capabilities across different operating systems without encountering interactive prompt deadlocks, we use a universal headless execution directive for the Phoronix Test Suite (PTS).
+To accurately compare raw CPU and memory capabilities across different operating systems without encountering interactive prompt deadlocks, we use a universal headless execution directive for the Phoronix Test Suite.
 
 ### Agent Directive
 If you are instructing an AI agent to run this benchmark on a new device, provide it with the following block:
@@ -20,10 +20,12 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ## 2. Accumulated Hardware Metrics (PTS Sprint)
 *These results reflect raw CPU and Memory bounds measured via `sysbench` and `stream`.*
 
-| Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU |
-| :--- | :--- | :--- | :--- | :--- |
-| **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110 MB/s** | **12,251.50 MiB/sec** | **7,142.15 Events Per Sec** |
-| **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** |
+| Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU | VKMark (Mailbox) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Intel Core i9-12900HK** | Alder Lake-P GT2 (Iris Xe) | **43,063.8 MB/s** | **14,679.19 MiB/sec** | **34,428.88 Events Per Sec** | **N/A (Headless)** |
+| **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110.5 MB/s** | **12,251.50 MiB/sec** | **7,142.15 Events Per Sec** | **N/A (Headless)** |
+| **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** | **3,804** |
+| **Intel Core i7-11800H** | RTX 3070 Laptop (8GB) | **40,413.4 MB/s** | **17,575.14 MiB/sec** | **25,796.01 Events Per Sec** | **N/A (Headless)** |
 
 ## 3. LLM Inference Cross-Device Results
 *Tested using `llama.cpp` across varying contexts and backends. The following table showcases the peak Token Generation (TG) speed achieved on each architecture.*
