@@ -53,3 +53,10 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ### Key Observations
 * **Memory Bandwidth defines the APU:** The gaming handhelds (ROG Ally, Steam Deck) drastically outperform traditional laptops (Ryzen 2700U, Intel 1215U) in token generation due to their hyper-optimized LPDDR5 memory configurations. 
 * **Speculative Decoding is unreliable on edge devices:** Multi-Token Prediction (MTP) draft evaluation typically introduces a compute bottleneck on laptops, severely reducing generation speed compared to standard vanilla execution.
+
+## 4. Extended Capabilities (Kernel, Storage, Audio AI)
+*Extended benchmarks tracking disk I/O, heavy multi-core CPU sustain, and Audio STT capabilities across devices.*
+
+| Device | Linux Kernel Compile (defconfig) | FIO Random Read (Direct) | Whisper.cpp (ggml-base.en) |
+| :--- | :--- | :--- | :--- |
+| **ASUS ROG Ally (Z1 Extreme)** | **218.37 Seconds** | **738 MB/s (189,000 IOPS)** | **206.08 Seconds** |
