@@ -77,6 +77,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **738 MB/s (189,000 IOPS)** | **528 MB/s (135,000 IOPS)** |
 | **AMD Ryzen 7 2700U** | **441 MB/s (112,750 IOPS)** | **288 MB/s (73,733 IOPS)** |
+| **Apple Mac M3 (16GB)** | **2232 MB/s (571,333 IOPS)** | **2241 MB/s (573,667 IOPS)** |
 
 ### Sustained Multi-Core Compute (`pts/build-linux-kernel`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the Linux Kernel from source.*
@@ -99,6 +100,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Hashcat (MD5) | 7-Zip Compression | 7-Zip Decompression |
 | :--- | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **5,887,600,000 H/s** | **65,413 MIPS** | **55,327 MIPS** |
+| **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* | **64,897 MIPS** | **43,755 MIPS** |
 
 ### Database Insertion Speed (`pts/sqlite`)
 *Synthetic measurement of database insertion and transaction speeds.*
