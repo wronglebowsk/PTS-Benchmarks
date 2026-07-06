@@ -17,46 +17,63 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 > TEST_RESULTS_IDENTIFIER=sprint TEST_RESULTS_NAME=sprint TEST_RESULTS_DESCRIPTION=sprint BATCH_MODE=1 phoronix-test-suite default-benchmark pts/sysbench pts/stream pts/vkmark
 > ```
 
-## 2. Accumulated Hardware Metrics (PTS Sprint)
-*These results reflect raw CPU and Memory bounds measured via `sysbench` and `stream`.*
+---
 
-| Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU | VKMark (Mailbox) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **ASUS ROG Ally (Z1 Extreme)** | RDNA3 iGPU | **58,150.2 MB/s** | **22,807.26 MiB/sec** | **36,404 Events Per Sec** | **N/A (Headless)** |
-| **Intel Core i9-12900HK** | Alder Lake-P GT2 (Iris Xe) | **43,063.8 MB/s** | **14,679.19 MiB/sec** | **34,428.88 Events Per Sec** | **N/A (Headless)** |
-| **Intel Core i7-11800H** | RTX 3070 Laptop (8GB) | **40,413.4 MB/s** | **17,575.14 MiB/sec** | **25,796.01 Events Per Sec** | **N/A (Headless)** |
-| **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110.5 MB/s** | **12,251.50 MiB/sec** | **7,142.15 Events Per Sec** | **N/A (Headless)** |
-| **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** | **3,804** |
-| **Intel N100** | Intel UHD Graphics | **20,018.9 MB/s** | **9,320.09 MiB/sec** | **8,436.38 Events Per Sec** | **N/A (Headless)** |
+## 2. Benchmark Results by Category
 
-## 3. LLM Inference Cross-Device Results
-*Tested using `llama.cpp` across varying contexts and backends. The following table showcases the peak Token Generation (TG) speed achieved on each architecture.*
+### Memory Bandwidth (`pts/stream`)
+*Critical metric dictating the absolute limit for Large Language Model token generation speeds. Measures memory copy bandwidth.*
 
-### Llama 3.2 1B (Q4_0)
-| Device | Best Backend | Prompt Processing | Token Generation |
-| :--- | :--- | :--- | :--- |
-| **Apple M3 (16GB)** | Metal (GPU) | 1,132.14 t/s | **102.37 t/s** |
-| **ROG Ally (Z1 Extreme)** | Vulkan (GPU) | ~560.00 t/s | **~85.00 t/s** |
-| **Steam Deck (Van Gogh)** | Vulkan (GPU) | ~350.00 t/s | **~65.00 t/s** |
-| **AMD Ryzen 7 2700U** | Vulkan (GPU) | 263.75 t/s | **32.47 t/s** |
-| **Intel Core i3-1215U** | OpenVINO | 711.52 t/s | **28.14 t/s** |
+| Device | APU/Graphics | Memory Bandwidth (Copy) |
+| :--- | :--- | :--- |
+| **ASUS ROG Ally (Z1 Extreme)** | RDNA3 iGPU | **58,150.2 MB/s** |
+| **Intel Core i9-12900HK** | Alder Lake-P GT2 (Iris Xe) | **43,063.8 MB/s** |
+| **Intel Core i7-11800H** | RTX 3070 Laptop (8GB) | **40,413.4 MB/s** |
+| **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110.5 MB/s** |
+| **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469.0 MB/s** |
+| **Intel N100** | Intel UHD Graphics | **20,018.9 MB/s** |
 
-### Gemma 4 E2B (Q8_0)
-| Device | Best Backend | Prompt Processing | Token Generation |
-| :--- | :--- | :--- | :--- |
-| **Apple M3 (16GB)** | Metal (GPU) | 194.29 t/s | **54.23 t/s** |
-| **ROG Ally (Z1 Extreme)** | Vulkan (GPU) | *(Not Recorded)* | **~45.70 t/s** |
-| **Steam Deck (Van Gogh)** | Vulkan (GPU) | 98.20 t/s | **27.38 t/s** |
-| **AMD Ryzen 7 2700U** | Vulkan (GPU) | 133.00 t/s | **14.60 t/s** |
-| **Intel Core i3-1215U** | Vulkan (GPU) | 64.75 t/s | **14.32 t/s** |
+### CPU & RAM Throughput (`pts/sysbench`)
+*Synthetic measurement of raw multi-threaded CPU event processing and RAM system routing.*
 
-### Key Observations
-* **Memory Bandwidth defines the APU:** The gaming handhelds (ROG Ally, Steam Deck) drastically outperform traditional laptops (Ryzen 2700U, Intel 1215U) in token generation due to their hyper-optimized LPDDR5 memory configurations. 
-* **Speculative Decoding is unreliable on edge devices:** Multi-Token Prediction (MTP) draft evaluation typically introduces a compute bottleneck on laptops, severely reducing generation speed compared to standard vanilla execution.
+| Device | Sysbench CPU (Events/Sec) | Sysbench RAM Throughput |
+| :--- | :--- | :--- |
+| **ASUS ROG Ally (Z1 Extreme)** | **36,404.00** | **22,807.26 MiB/sec** |
+| **Intel Core i9-12900HK** | **34,428.88** | **14,679.19 MiB/sec** |
+| **Intel Core i7-11800H** | **25,796.01** | **17,575.14 MiB/sec** |
+| **Intel N100** | **8,436.38** | **9,320.09 MiB/sec** |
+| **Steam Deck (Van Gogh)** | **7,142.15** | **12,251.50 MiB/sec** |
+| **AMD Ryzen 7 2700U** | **5,787.14** | **722.55 MiB/sec** |
 
-## 4. Extended Capabilities (Kernel, Storage, Audio AI)
-*Extended benchmarks tracking disk I/O, heavy multi-core CPU sustain, and Audio STT capabilities across devices.*
+### Vulkan Compute (`pts/vkmark`)
+*Graphics and compute benchmark measuring the capabilities of the Vulkan rendering pipeline.*
 
-| Device | Linux Kernel Compile (defconfig) | FIO Random Read (Direct) | Whisper.cpp (ggml-base.en) |
-| :--- | :--- | :--- | :--- |
-| **ASUS ROG Ally (Z1 Extreme)** | **218.37 Seconds** | **738 MB/s (189,000 IOPS)** | **206.08 Seconds** |
+| Device | VKMark (Mailbox) |
+| :--- | :--- |
+| **AMD Ryzen 7 2700U** | **3,804** |
+| **ASUS ROG Ally (Z1 Extreme)** | *N/A (Headless)* |
+| **Intel Core i9-12900HK** | *N/A (Headless)* |
+| **Intel Core i7-11800H** | *N/A (Headless)* |
+| **Steam Deck (Van Gogh)** | *N/A (Headless)* |
+| **Intel N100** | *N/A (Headless)* |
+
+### Storage I/O Speeds (`pts/fio`)
+*Measurements of the internal NVMe storage limits.*
+
+| Device | FIO Random Read (Direct) | FIO Random Read (Buffered) |
+| :--- | :--- | :--- |
+| **ASUS ROG Ally (Z1 Extreme)** | **738 MB/s (189,000 IOPS)** | **528 MB/s (135,000 IOPS)** |
+
+### Sustained Multi-Core Compute (`pts/build-linux-kernel`)
+*A brutal test of the system's thermal limits and sustained multi-thread performance compiling the Linux Kernel from source.*
+
+| Device | Build Time (defconfig) |
+| :--- | :--- |
+| **ASUS ROG Ally (Z1 Extreme)** | **218.37 Seconds** |
+
+### Audio AI Processing (`pts/whisper-cpp`)
+*Real-world STT (Speech-to-Text) inference speed executed entirely on the CPU using the `ggml-base.en` architecture.*
+
+| Device | Input File | Transcription Time |
+| :--- | :--- | :--- |
+| **ASUS ROG Ally (Z1 Extreme)** | 2016 State of the Union (~60m) | **206.08 Seconds** |
