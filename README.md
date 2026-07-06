@@ -85,6 +85,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Build Time (defconfig) |
 | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **218.37 Seconds** |
+| **AMD Ryzen 7 2700U** | **762.20 Seconds** |
 
 ### Audio AI Processing (`pts/whisper-cpp`)
 *Real-world STT (Speech-to-Text) inference speed executed entirely on the CPU using the `ggml-base.en` architecture.*
