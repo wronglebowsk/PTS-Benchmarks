@@ -73,6 +73,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | FIO Random Read (Direct) | FIO Random Read (Buffered) |
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **738 MB/s (189,000 IOPS)** | **528 MB/s (135,000 IOPS)** |
+| **AMD Ryzen 7 2700U** | **441 MB/s (112,750 IOPS)** | **288 MB/s (73,733 IOPS)** |
 
 ### Sustained Multi-Core Compute (`pts/build-linux-kernel`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the Linux Kernel from source.*
@@ -87,6 +88,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Input File | Transcription Time |
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | 2016 State of the Union (~60m) | **206.08 Seconds** |
+| **AMD Ryzen 7 2700U** | 2016 State of the Union (~60m) | **1,215.74 Seconds** |
 
 ### Pure Compute & Cryptography (`pts/hashcat` & `pts/compress-7zip`)
 *Tests of raw mathematical throughput, integer math capabilities, and OpenCL compute speeds.*
