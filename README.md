@@ -12,10 +12,12 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 > 
 > Clone `https://github.com/phoronix-test-suite/phoronix-test-suite.git` and install it.
 > 
-> Finally, run the following exact command to execute a headless hardware sprint targeting CPU, RAM, and GPU. Do *not* pipe `yes` into the command:
+> Run the following exact command to execute a headless hardware sprint targeting CPU, RAM, and GPU. Do *not* pipe `yes` into the command:
 > ```bash
 > TEST_RESULTS_IDENTIFIER=sprint TEST_RESULTS_NAME=sprint TEST_RESULTS_DESCRIPTION=sprint BATCH_MODE=1 phoronix-test-suite default-benchmark pts/sysbench pts/stream pts/vkmark
 > ```
+> 
+> **Important:** Create a dedicated markdown file for each unique machine and operating system combination (e.g., `Intel_Core_i7-11800H_Ubuntu_26.04.md`). In this file, include the system's complete hardware information (CPU, GPU, RAM, OS version) and compile all of the benchmark results (both brief summaries and detailed test logs like EPP scaling or OpenVINO) for this specific machine. Ensure that the main `README.md` is also updated with brief metric summaries by category.
 
 ---
 
