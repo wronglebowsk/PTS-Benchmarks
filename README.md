@@ -60,6 +60,16 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ### Storage I/O Speeds (`pts/fio`)
 *Measurements of the internal NVMe storage limits.*
 
+> [!WARNING]
+> **FIO Configuration Notice**
+> If you run `pts/fio` interactively, be extremely careful not to select heavy sequential write benchmarks with massive job counts, as they can take days to complete on slower drives.
+> Our standardized sprint uses the following configuration:
+> * **Type:** Random Read
+> * **Engine:** IO_uring
+> * **Direct:** Yes / No (Both recorded)
+> * **Block Size:** 4KB
+> * **Job Count:** 1
+
 | Device | FIO Random Read (Direct) | FIO Random Read (Buffered) |
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **738 MB/s (189,000 IOPS)** | **528 MB/s (135,000 IOPS)** |
