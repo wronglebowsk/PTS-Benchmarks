@@ -22,10 +22,11 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 
 | Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU | VKMark (Mailbox) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| **ASUS ROG Ally (Z1 Extreme)** | RDNA3 iGPU | **58,150.2 MB/s** | **22,807.26 MiB/sec** | **36,404 Events Per Sec** | **N/A (Headless)** |
 | **Intel Core i9-12900HK** | Alder Lake-P GT2 (Iris Xe) | **43,063.8 MB/s** | **14,679.19 MiB/sec** | **34,428.88 Events Per Sec** | **N/A (Headless)** |
+| **Intel Core i7-11800H** | RTX 3070 Laptop (8GB) | **40,413.4 MB/s** | **17,575.14 MiB/sec** | **25,796.01 Events Per Sec** | **N/A (Headless)** |
 | **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110.5 MB/s** | **12,251.50 MiB/sec** | **7,142.15 Events Per Sec** | **N/A (Headless)** |
 | **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** | **3,804** |
-| **Intel Core i7-11800H** | RTX 3070 Laptop (8GB) | **40,413.4 MB/s** | **17,575.14 MiB/sec** | **25,796.01 Events Per Sec** | **N/A (Headless)** |
 
 ## 3. LLM Inference Cross-Device Results
 *Tested using `llama.cpp` across varying contexts and backends. The following table showcases the peak Token Generation (TG) speed achieved on each architecture.*
