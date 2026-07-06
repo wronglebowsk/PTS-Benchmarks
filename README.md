@@ -27,6 +27,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i7-11800H** | RTX 3070 Laptop (8GB) | **40,413.4 MB/s** | **17,575.14 MiB/sec** | **25,796.01 Events Per Sec** | **N/A (Headless)** |
 | **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110.5 MB/s** | **12,251.50 MiB/sec** | **7,142.15 Events Per Sec** | **N/A (Headless)** |
 | **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** | **3,804** |
+| **Intel N100** | Intel UHD Graphics | **20,018.9 MB/s** | **9,320.09 MiB/sec** | **8,436.38 Events Per Sec** | **N/A (Headless)** |
 
 ## 3. LLM Inference Cross-Device Results
 *Tested using `llama.cpp` across varying contexts and backends. The following table showcases the peak Token Generation (TG) speed achieved on each architecture.*
