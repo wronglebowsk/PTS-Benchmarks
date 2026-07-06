@@ -22,4 +22,5 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 
 | Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU | VKMark (Mailbox) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Intel Core i9-12900HK** | Alder Lake-P GT2 (Iris Xe) | **43,063.8 MB/s** | **14,679.19 MiB/sec** | **34,428.88 Events Per Sec** | **N/A (Headless)** |
 | **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** | **3,804** |
