@@ -20,6 +20,6 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ## 2. Accumulated Hardware Metrics (PTS Sprint)
 *These results reflect raw CPU and Memory bounds measured via `sysbench` and `stream`.*
 
-| Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU |
-| :--- | :--- | :--- | :--- | :--- |
-| **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** |
+| Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU | VKMark (Mailbox) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** | **3,804** |
