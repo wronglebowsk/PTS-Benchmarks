@@ -22,7 +22,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 
 | Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU |
 | :--- | :--- | :--- | :--- | :--- |
-| **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | *(Testing in progress)* |
+| **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** |
 
 ## 3. LLM Inference Cross-Device Results
 *Tested using `llama.cpp` across varying contexts and backends. The following table showcases the peak Token Generation (TG) speed achieved on each architecture.*
