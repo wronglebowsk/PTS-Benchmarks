@@ -32,6 +32,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110.5 MB/s** |
 | **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469.0 MB/s** |
 | **Intel N100** | Intel UHD Graphics | **20,018.9 MB/s** |
+| **Apple Mac M3 (16GB)** | M3 10-Core GPU | *N/A (Clang OpenMP Unsupported)* |
 
 ### CPU & RAM Throughput (`pts/sysbench`)
 *Synthetic measurement of raw multi-threaded CPU event processing and RAM system routing.*
@@ -44,6 +45,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel N100** | **8,436.38** | **9,320.09 MiB/sec** |
 | **Steam Deck (Van Gogh)** | **7,142.15** | **12,251.50 MiB/sec** |
 | **AMD Ryzen 7 2700U** | **5,787.14** | **722.55 MiB/sec** |
+| **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* | *N/A (macOS Unsupported)* |
 
 ### Vulkan Compute (`pts/vkmark`)
 *Graphics and compute benchmark measuring the capabilities of the Vulkan rendering pipeline.*
@@ -56,6 +58,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i7-11800H** | *N/A (Headless)* |
 | **Steam Deck (Van Gogh)** | *N/A (Headless)* |
 | **Intel N100** | *N/A (Headless)* |
+| **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* |
 
 ### Storage I/O Speeds (`pts/fio`)
 *Measurements of the internal NVMe storage limits.*
@@ -96,3 +99,17 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Hashcat (MD5) | 7-Zip Compression | 7-Zip Decompression |
 | :--- | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **5,887,600,000 H/s** | **65,413 MIPS** | **55,327 MIPS** |
+
+### Database Insertion Speed (`pts/sqlite`)
+*Synthetic measurement of database insertion and transaction speeds.*
+
+| Device | 4 Threads | 8 Threads |
+| :--- | :--- | :--- |
+| **Apple Mac M3 (16GB)** | **2.53 Seconds** | **4.29 Seconds** |
+
+### Sustained Compilation (`pts/build-llvm`)
+*A brutal test of the system's thermal limits and sustained multi-thread performance compiling the LLVM codebase from source.*
+
+| Device | Build Time (Unix Makefiles) |
+| :--- | :--- |
+| **Apple Mac M3 (16GB)** | **1071.325 Seconds** |
