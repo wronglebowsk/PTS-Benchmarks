@@ -22,6 +22,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 
 | Device | APU/Graphics | Memory Bandwidth (Copy) | Sysbench RAM Throughput | Sysbench CPU |
 | :--- | :--- | :--- | :--- | :--- |
+| **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110 MB/s** | **12,251.50 MiB/sec** | **7,142.15 Events Per Sec** |
 | **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469 MB/s** | **722.55 MiB/sec** | **5,787.14 Events Per Sec** |
 
 ## 3. LLM Inference Cross-Device Results
