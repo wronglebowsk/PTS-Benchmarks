@@ -124,6 +124,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **5,887,600,000 H/s** | **65,413 MIPS** | **55,327 MIPS** |
 | **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* | **64,897 MIPS** | **43,755 MIPS** |
+| **AMD Ryzen 7 2700U** | *N/A (OpenCL Unsupported)* | **19,026 MIPS** | **15,615 MIPS** |
 | **Intel Core i7-11800H** | *N/A (Failed Install)* | **64,554 MIPS** | **62,711 MIPS** |
 
 ### Database Insertion Speed (`pts/sqlite`)

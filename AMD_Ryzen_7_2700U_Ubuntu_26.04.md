@@ -31,3 +31,11 @@
 ### 7. AI Inference (`pts/openvino`)
 * **Face Detection FP16 (Latency):** 0.32 FPS (3,098.42 ms)
 * **Face Detection FP16 (Throughput):** 0.30 FPS (13,330.01 ms)
+
+### 8. Pure Compute & Cryptography (`pts/compress-7zip` & `pts/hashcat`)
+* **7-Zip Compression:** 19,026 MIPS
+* **7-Zip Decompression:** 15,615 MIPS
+* **Hashcat (MD5):** N/A (OpenCL Driver Unsupported)
+
+### 9. Database Insertion Speed (`pts/sqlite`)
+* **1 Thread:** 13.920 Seconds
