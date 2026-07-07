@@ -94,16 +94,16 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i3-1215U** | **398.94 Seconds** |
 | **AMD Ryzen 7 2700U** | **762.20 Seconds** |
 
-### Audio AI Processing (`pts/whisper-cpp`)
-*Real-world STT (Speech-to-Text) inference speed executed entirely on the CPU using the `ggml-base.en` architecture.*
+### Audio AI Processing & TTS (`pts/whisper-cpp` & `pts/espeak`)
+*Real-world STT (Speech-to-Text) inference speed and Text-To-Speech synthesis executed on the CPU.*
 
-| Device | Input File | Transcription Time |
+| Device | Whisper Transcription Time | eSpeak Synthesis Time |
 | :--- | :--- | :--- |
-| **ASUS ROG Ally (Z1 Extreme)** | 2016 State of the Union (~60m) | **206.08 Seconds** |
-| **Intel Core i9-12900HK** | 2016 State of the Union (~60m) | **678.41 Seconds** |
-| **Intel Core i3-1215U** | 2016 State of the Union (~60m) | **698.03 Seconds** |
-| **Steam Deck (Van Gogh)** | 2016 State of the Union (~60m) | *N/A (Execution Failed)* |
-| **AMD Ryzen 7 2700U** | 2016 State of the Union (~60m) | **1,215.74 Seconds** |
+| **ASUS ROG Ally (Z1 Extreme)** | **206.08 Seconds** | **22.33 Seconds** |
+| **Intel Core i9-12900HK** | **678.41 Seconds** | *N/A* |
+| **Intel Core i3-1215U** | **698.03 Seconds** | *N/A* |
+| **Steam Deck (Van Gogh)** | *N/A (Execution Failed)* | *N/A* |
+| **AMD Ryzen 7 2700U** | **1,215.74 Seconds** | *N/A* |
 
 ### Pure Compute & Cryptography (`pts/hashcat` & `pts/compress-7zip`)
 *Tests of raw mathematical throughput, integer math capabilities, and OpenCL compute speeds.*
