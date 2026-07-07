@@ -48,3 +48,37 @@ Extensive AI capability testing using Intel's native OpenVINO frameworks (`pts/o
 | **Person Re-Identification Retail** | FP16 | Throughput | ~329 FPS |
 | **Machine Translation (EN to DE)** | FP16 | Latency | ~43.6 ms |
 | **Age/Gender Recognition Retail 0013** | FP16-INT8 | Throughput | ~13,683 FPS |
+
+---
+
+### 4. Database Insertion Speed (`pts/sqlite`)
+Synthetic measurement of database insertion and transaction speeds across varying thread counts.
+
+| Threads | Time (Seconds) |
+| :--- | :--- |
+| **1 Thread** | 46.09s |
+| **2 Threads** | 84.96s |
+| **4 Threads** | 85.84s |
+| **8 Threads** | 84.49s |
+| **16 Threads** | 85.20s |
+
+---
+
+### 5. Sustained Compilation (`pts/build-llvm`)
+A test of the system's sustained multi-thread performance compiling the LLVM codebase from source.
+
+| Build System | Time (Seconds) |
+| :--- | :--- |
+| **Ninja** | 1,172.86s |
+| **Unix Makefiles** | 1,202.72s |
+
+---
+
+### 6. Pure Compute & Cryptography (`pts/hashcat` & `pts/compress-7zip`)
+Tests of raw mathematical throughput and integer math capabilities. *(Note: Hashcat execution failed due to a missing 7z dependency in the test suite).*
+
+| Metric | Result |
+| :--- | :--- |
+| **7-Zip Compression** | 64,554 MIPS |
+| **7-Zip Decompression** | 62,711 MIPS |
+| **Hashcat (MD5)** | N/A (Failed Install) |

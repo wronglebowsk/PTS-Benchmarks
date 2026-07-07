@@ -107,6 +107,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **5,887,600,000 H/s** | **65,413 MIPS** | **55,327 MIPS** |
 | **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* | **64,897 MIPS** | **43,755 MIPS** |
+| **Intel Core i7-11800H** | *N/A (Failed Install)* | **64,554 MIPS** | **62,711 MIPS** |
 
 ### Database Insertion Speed (`pts/sqlite`)
 *Synthetic measurement of database insertion and transaction speeds.*
@@ -114,6 +115,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | 4 Threads | 8 Threads |
 | :--- | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **2.53 Seconds** | **4.29 Seconds** |
+| **Intel Core i7-11800H** | **85.83 Seconds** | **84.49 Seconds** |
 
 ### Sustained Compilation (`pts/build-llvm`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the LLVM codebase from source.*
@@ -121,6 +123,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Build Time (Unix Makefiles) |
 | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **1071.325 Seconds** |
+| **Intel Core i7-11800H** | **1202.723 Seconds** |
 
 ### CPU Ray Tracing (`pts/c-ray`)
 *A simple, multi-threaded raytracer testing floating-point CPU performance.*
