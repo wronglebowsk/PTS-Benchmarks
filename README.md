@@ -31,6 +31,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **ASUS ROG Ally (Z1 Extreme)** | RDNA3 iGPU | **58,150.2 MB/s** |
 | **Intel Core i9-12900HK** | Alder Lake-P GT2 (Iris Xe) | **43,063.8 MB/s** |
 | **Intel Core i7-11800H** | RTX 3070 Laptop (8GB) | **40,413.4 MB/s** |
+| **Intel Core i3-1215U** | Alder Lake GT1 (UHD) | **37,550.9 MB/s** |
 | **Steam Deck (Van Gogh)** | RDNA 2 APU | **32,110.5 MB/s** |
 | **AMD Ryzen 7 2700U** | Vega 10 Mobile | **27,469.0 MB/s** |
 | **Intel N100** | Intel UHD Graphics | **20,018.9 MB/s** |
@@ -44,6 +45,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **ASUS ROG Ally (Z1 Extreme)** | **36,404.00** | **22,807.26 MiB/sec** |
 | **Intel Core i9-12900HK** | **34,428.88** | **14,679.19 MiB/sec** |
 | **Intel Core i7-11800H** | **25,796.01** | **17,575.14 MiB/sec** |
+| **Intel Core i3-1215U** | **14,900.14** | **14,069.00 MiB/sec** |
 | **Intel N100** | **8,436.38** | **9,320.09 MiB/sec** |
 | **Steam Deck (Van Gogh)** | **7,142.15** | **12,251.50 MiB/sec** |
 | **AMD Ryzen 7 2700U** | **5,787.14** | **722.55 MiB/sec** |
@@ -54,6 +56,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 
 | Device | VKMark (Mailbox) |
 | :--- | :--- |
+| **Intel Core i3-1215U** | **11,524** |
 | **AMD Ryzen 7 2700U** | **3,804** |
 | **ASUS ROG Ally (Z1 Extreme)** | *N/A (Headless)* |
 | **Intel Core i9-12900HK** | *N/A (Headless)* |
@@ -88,6 +91,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **218.37 Seconds** |
 | **Steam Deck (Van Gogh)** | **380.48 Seconds** |
+| **Intel Core i3-1215U** | **398.94 Seconds** |
 | **AMD Ryzen 7 2700U** | **762.20 Seconds** |
 
 ### Audio AI Processing (`pts/whisper-cpp`)
@@ -97,6 +101,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | 2016 State of the Union (~60m) | **206.08 Seconds** |
 | **Intel Core i9-12900HK** | 2016 State of the Union (~60m) | **678.41 Seconds** |
+| **Intel Core i3-1215U** | 2016 State of the Union (~60m) | **698.03 Seconds** |
 | **Steam Deck (Van Gogh)** | 2016 State of the Union (~60m) | *N/A (Execution Failed)* |
 | **AMD Ryzen 7 2700U** | 2016 State of the Union (~60m) | **1,215.74 Seconds** |
 
