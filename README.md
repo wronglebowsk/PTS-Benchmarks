@@ -83,6 +83,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **ASUS ROG Ally (Z1 Extreme)** | **738 MB/s (189,000 IOPS)** | **528 MB/s (135,000 IOPS)** |
 | **AMD Ryzen 7 2700U** (Toshiba XG5 Gen3 x4) | **441 MB/s (112,750 IOPS)** | **288 MB/s (73,733 IOPS)** |
 | **Apple Mac M3 (16GB)** | **2232 MB/s (571,333 IOPS)** | **2241 MB/s (573,667 IOPS)** |
+| **Intel Core i7-11800H** | *N/A (Skipped)* | *N/A (Skipped)* |
 
 ### Sustained Multi-Core Compute (`pts/build-linux-kernel`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the Linux Kernel from source.*
@@ -97,6 +98,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Steam Deck (Van Gogh)** | **380.48 Seconds** |
 | **Intel Core i3-1215U** | **398.94 Seconds** |
 | **AMD Ryzen 7 2700U** | **762.20 Seconds** |
+| **Intel Core i7-11800H** | *N/A (Failed Install)* |
 
 ### Audio AI Processing & TTS (`pts/whisper-cpp` & `pts/espeak`)
 *Real-world STT (Speech-to-Text) inference speed and Text-To-Speech synthesis executed on the CPU.*
