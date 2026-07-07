@@ -46,4 +46,33 @@
 - **Handwritten English Recognition FP16-INT8:** 51.14 FPS
 
 ## Sustained Multi-Core Compute (Kernel Compilation)
-- **Build Time:** Failed to run (missing dependencies `bison` / `flex`).
+- **Build Time (defconfig):** 319.85 Seconds
+
+## Storage I/O Speeds (fio)
+*Random Read, IO_uring, 4KB Block Size, 1 Job*
+- **Direct:** 417 MB/s (102,000 IOPS)
+- **Buffered:** 427 MB/s (104,000 IOPS)
+
+## Database Insertion Speed (SQLite)
+- **4 Threads:** 91.27 Seconds
+- **8 Threads:** 90.55 Seconds
+
+## Pure Compute & Cryptography
+- **7-Zip Compression:** 39,125 MIPS
+- **7-Zip Decompression:** 21,025 MIPS
+- **Hashcat:** N/A (Missing OpenCL)
+
+## CPU Ray Tracing (C-Ray)
+*16 Rays Per Pixel*
+- **1080p:** 152.96 Seconds
+- **4K:** 613.34 Seconds
+- **5K:** 1090.25 Seconds
+
+## Single-Thread Scripting (PHPBench)
+- **Score:** 573,371
+
+## Developer Operations (Git)
+- **Time To Complete:** 83.23 Seconds
+
+## Text-To-Speech Synthesis (eSpeak)
+- **Time To Complete:** 45.22 Seconds

@@ -81,6 +81,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | FIO Random Read (Direct) | FIO Random Read (Buffered) |
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **738 MB/s (189,000 IOPS)** | **528 MB/s (135,000 IOPS)** |
+| **Intel Core i9-12900HK** | **417 MB/s (102,000 IOPS)** | **427 MB/s (104,000 IOPS)** |
 | **AMD Ryzen 7 2700U** (Toshiba XG5 Gen3 x4) | **441 MB/s (112,750 IOPS)** | **288 MB/s (73,733 IOPS)** |
 | **Apple Mac M3 (16GB)** | **2232 MB/s (571,333 IOPS)** | **2241 MB/s (573,667 IOPS)** |
 | **Intel Core i7-11800H** | *N/A (Skipped)* | *N/A (Skipped)* |
@@ -111,7 +112,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **206.08 Seconds** | **22.33 Seconds** |
 | **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* | **19.54 Seconds** |
-| **Intel Core i9-12900HK** | **678.41 Seconds** | *N/A* |
+| **Intel Core i9-12900HK** | **678.41 Seconds** | **45.22 Seconds** |
 | **Intel Core i3-1215U** | **698.03 Seconds** | *N/A* |
 | **Steam Deck (Van Gogh)** | *N/A (Execution Failed)* | *N/A* |
 | **AMD Ryzen 7 2700U** | **1,215.74 Seconds** | *N/A* |
@@ -135,6 +136,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Hashcat (MD5) | 7-Zip Compression | 7-Zip Decompression |
 | :--- | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **5,887,600,000 H/s** | **65,413 MIPS** | **55,327 MIPS** |
+| **Intel Core i9-12900HK** | *N/A (Missing OpenCL)* | **39,125 MIPS** | **21,025 MIPS** |
 | **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* | **64,897 MIPS** | **43,755 MIPS** |
 | **AMD Ryzen 7 2700U** | *N/A (OpenCL Unsupported)* | **19,026 MIPS** | **15,615 MIPS** |
 | **Intel Core i7-11800H** | *N/A (Failed Install)* | **64,554 MIPS** | **62,711 MIPS** |
@@ -150,6 +152,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | 4 Threads | 8 Threads |
 | :--- | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **2.53 Seconds** | **4.29 Seconds** |
+| **Intel Core i9-12900HK** | **91.27 Seconds** | **90.55 Seconds** |
 | **Intel Core i7-11800H** | **85.83 Seconds** | **84.49 Seconds** |
 
 ### Sustained Compilation (`pts/build-llvm`)
@@ -177,6 +180,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **81.55 Seconds** | **323.51 Seconds** | **586.34 Seconds** |
 | **Intel Core i7-11800H** | **100.82 Seconds** | **407.97 Seconds** | **726.93 Seconds** |
+| **Intel Core i9-12900HK** | **152.96 Seconds** | **613.34 Seconds** | **1090.25 Seconds** |
 
 ### Single-Thread PHP Scripting (`pts/phpbench`)
 *A benchmark suite testing the raw execution speed of the PHP engine.*
@@ -189,6 +193,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **1,086,652 Score** |
 | **Intel Core i7-11800H** | **1,058,417 Score** |
+| **Intel Core i9-12900HK** | **573,371 Score** |
 
 ### Developer Git Commands (`pts/git`)
 *Real-world benchmark simulating developer operations by timing massive git repository commands.*
@@ -201,3 +206,4 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **35.35 Seconds** |
 | **Intel Core i7-11800H** | **40.50 Seconds** |
+| **Intel Core i9-12900HK** | **83.23 Seconds** |
