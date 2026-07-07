@@ -154,6 +154,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Apple Mac M3 (16GB)** | **2.53 Seconds** | **4.29 Seconds** |
 | **Intel Core i9-12900HK** | **91.27 Seconds** | **90.55 Seconds** |
 | **Intel Core i7-11800H** | **85.83 Seconds** | **84.49 Seconds** |
+| **ASUS ROG Ally (Z1 Extreme)** | **23.33 Seconds** | **30.59 Seconds** |
 
 ### Sustained Compilation (`pts/build-llvm`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the LLVM codebase from source.*
@@ -166,6 +167,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **1071.325 Seconds** |
 | **Intel Core i7-11800H** | **1202.723 Seconds** |
+| **ASUS ROG Ally (Z1 Extreme)** | **1421.00 Seconds** |
 
 ### CPU Ray Tracing (`pts/c-ray`)
 *A simple, multi-threaded raytracer testing floating-point CPU performance.*
@@ -182,6 +184,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i7-11800H** | **100.82 Seconds** | **407.97 Seconds** | **726.93 Seconds** |
 | **Intel Core i9-12900HK** | **152.96 Seconds** | **613.34 Seconds** | **1090.25 Seconds** |
 | **AMD Ryzen 7 2700U** | **350.92 Seconds** | *N/A* | *N/A* |
+| **ASUS ROG Ally (Z1 Extreme)** | **112.37 Seconds** | **456.53 Seconds** | **812.30 Seconds** |
 
 ### Single-Thread PHP Scripting (`pts/phpbench`)
 *A benchmark suite testing the raw execution speed of the PHP engine.*
@@ -196,6 +199,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i7-11800H** | **1,058,417 Score** |
 | **Intel Core i9-12900HK** | **573,371 Score** |
 | **AMD Ryzen 7 2700U** | **374,353 Score** |
+| **ASUS ROG Ally (Z1 Extreme)** | **1,134,855 Score** |
 
 ### Developer Git Commands (`pts/git`)
 *Real-world benchmark simulating developer operations by timing massive git repository commands.*
@@ -210,3 +214,4 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i7-11800H** | **40.50 Seconds** |
 | **Intel Core i9-12900HK** | **83.23 Seconds** |
 | **AMD Ryzen 7 2700U** | **59.49 Seconds** |
+| **ASUS ROG Ally (Z1 Extreme)** | **30.54 Seconds** |

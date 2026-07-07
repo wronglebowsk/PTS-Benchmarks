@@ -61,3 +61,51 @@ Tests of raw mathematical throughput and integer math capabilities.
 | **Hashcat (MD5)** | 5,887,600,000 H/s |
 | **7-Zip Compression** | 65,413 MIPS |
 | **7-Zip Decompression** | 55,327 MIPS |
+
+---
+
+### 6. Database Insertion Speed (`pts/sqlite`)
+Synthetic measurement of database insertion and transaction speeds.
+
+| Metric | Result |
+| :--- | :--- |
+| **4 Threads** | 23.33 Seconds |
+| **8 Threads** | 30.59 Seconds |
+
+---
+
+### 7. Sustained Compilation (`pts/build-llvm`)
+A brutal test of the system's thermal limits and sustained multi-thread performance compiling the LLVM codebase from source.
+
+| Metric | Result |
+| :--- | :--- |
+| **Build Time (Unix Makefiles)** | 1421.00 Seconds |
+
+---
+
+### 8. CPU Ray Tracing (`pts/c-ray`)
+A simple, multi-threaded raytracer testing floating-point CPU performance.
+
+| Metric | Result |
+| :--- | :--- |
+| **1080p** | 112.37 Seconds |
+| **4K** | 456.53 Seconds |
+| **5K** | 812.30 Seconds |
+
+---
+
+### 9. Single-Thread PHP Scripting (`pts/phpbench`)
+A benchmark suite testing the raw execution speed of the PHP engine.
+
+| Metric | Result |
+| :--- | :--- |
+| **PHPBench Score** | 1,134,855 Score |
+
+---
+
+### 10. Developer Git Commands (`pts/git`)
+Real-world benchmark simulating developer operations by timing massive git repository commands.
+
+| Metric | Result |
+| :--- | :--- |
+| **Time To Complete** | 30.54 Seconds |
