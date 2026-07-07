@@ -87,6 +87,10 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ### Sustained Multi-Core Compute (`pts/build-linux-kernel`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the Linux Kernel from source.*
 
+> [!NOTE]
+> **Kernel Configuration Notice**
+> To avoid hours of unnecessary compile time, please ensure you only select and run the `defconfig` profile. Skip `allmodconfig`.
+
 | Device | Build Time (defconfig) |
 | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **218.37 Seconds** |
