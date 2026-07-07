@@ -4,6 +4,7 @@
 * **CPU:** AMD Ryzen 7 PRO 2700U (4 Cores / 8 Threads)
 * **GPU:** Radeon Vega 10 Mobile Gfx
 * **RAM:** 32GB
+* **Storage:** Toshiba XG5 512GB NVMe (KXG50ZNV512G) connected via PCIe 3.0 x4 (8GT/s)
 * **OS:** Ubuntu 26.04 LTS
 
 ## Benchmark Results
@@ -19,6 +20,7 @@
 * **Score (Mailbox):** 3,804
 
 ### 4. Storage I/O (`pts/fio`)
+*Note: The Toshiba XG5 NVMe is connected via a full PCIe 3.0 x4 link, yet performance is severely capped, pointing to heavy drive wear, OEM firmware degradation, or CPU overhead.*
 * **Random Read (Direct):** 441 MB/s (112,750 IOPS)
 * **Random Read (Buffered):** 288 MB/s (73,733 IOPS)
 
