@@ -51,3 +51,9 @@
 
 ### 12. Developer Git Commands (`pts/git`)
 * **Time To Complete:** 59.49 Seconds
+
+### 13. 3D Rendering (`pts/blender`)
+* **BMW27 (CPU-Only):** 769.37 Seconds
+
+### 14. 3D Gaming Performance (`pts/xonotic`)
+* **800 x 600 (Low):** 18.16 FPS

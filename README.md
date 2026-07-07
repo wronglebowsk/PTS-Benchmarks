@@ -233,12 +233,13 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 > [!NOTE]
 > **Xonotic Configuration Notice**
 > The standard automated testing profiles for this benchmark are:
-> * **Resolution:** 1024 x 768
+> * **Resolution:** 1024 x 768 (or 800 x 600 fallback)
 > * **Effects Quality:** Low
 
-| Device | 1024x768 (Low) |
+| Device | Score (Low Quality) |
 | :--- | :--- |
-| **Intel Core i3-1215U** | **17.61 FPS** |
+| **Intel Core i3-1215U** | **17.61 FPS** (1024x768) |
+| **AMD Ryzen 7 2700U** | **18.16 FPS** (800x600) |
 
 ### 3D Asset Rendering (`pts/blender`)
 *A test of the Blender 3D creation software rendering performance. Tests CPU and GPU compute capabilities.*
@@ -251,3 +252,4 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- |
 | **Intel Core i9-12900HK** | **360.47 Seconds** |
 | **Intel Core i3-1215U** | **478.81 Seconds** |
+| **AMD Ryzen 7 2700U** | **769.37 Seconds** |
