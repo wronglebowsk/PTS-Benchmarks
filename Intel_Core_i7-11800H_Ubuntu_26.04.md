@@ -48,6 +48,7 @@ Extensive AI capability testing using Intel's native OpenVINO frameworks (`pts/o
 | **Person Re-Identification Retail** | FP16 | Throughput | ~329 FPS |
 | **Machine Translation (EN to DE)** | FP16 | Latency | ~43.6 ms |
 | **Age/Gender Recognition Retail 0013** | FP16-INT8 | Throughput | ~13,683 FPS |
+| **Vehicle Detection** | FP16 | Throughput | ~127.84 FPS |
 
 ---
 

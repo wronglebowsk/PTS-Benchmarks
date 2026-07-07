@@ -121,6 +121,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Face Detection FP16 (FPS) | Vehicle Detection FP16 (FPS) |
 | :--- | :--- | :--- |
 | **Steam Deck (Van Gogh)** | **0.43 FPS** | **42.71 FPS** |
+| **Intel Core i7-11800H** | **546.00 FPS** | **127.84 FPS** |
 
 ### Pure Compute & Cryptography (`pts/hashcat` & `pts/compress-7zip`)
 *Tests of raw mathematical throughput, integer math capabilities, and OpenCL compute speeds.*
