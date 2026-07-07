@@ -76,3 +76,7 @@
 
 ## Text-To-Speech Synthesis (eSpeak)
 - **Time To Complete:** 45.22 Seconds
+
+## 3D Asset Rendering (Blender)
+*Scene: BMW27, Compute: CPU-Only*
+- **Time To Complete:** 360.47 Seconds

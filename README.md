@@ -226,3 +226,14 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Steam Deck (Van Gogh)** | **66.19 Seconds** |
 | **Intel Core i3-1215U** | **82.69 Seconds** |
 | **Intel Core i9-12900HK** | **83.23 Seconds** |
+
+### 3D Asset Rendering (`pts/blender`)
+*A test of the Blender 3D creation software rendering performance. Tests CPU and GPU compute capabilities.*
+
+> [!NOTE]
+> **Blender Configuration Notice**
+> This benchmark tests the default `BMW27` scene on the default `CPU` compute device to avoid excessive permutation benchmarking.
+
+| Device | BMW27 (CPU-Only) |
+| :--- | :--- |
+| **Intel Core i9-12900HK** | **360.47 Seconds** |
