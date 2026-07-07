@@ -240,6 +240,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- |
 | **Intel Core i3-1215U** | **17.61 FPS** (1024x768) |
 | **AMD Ryzen 7 2700U** | **18.16 FPS** (800x600) |
+| **ASUS ROG Ally (Z1 Extreme)** | *N/A (Headless)* |
 
 ### 3D Asset Rendering (`pts/blender`)
 *A test of the Blender 3D creation software rendering performance. Tests CPU and GPU compute capabilities.*
@@ -250,6 +251,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 
 | Device | BMW27 (CPU-Only) |
 | :--- | :--- |
+| **ASUS ROG Ally (Z1 Extreme)** | **234.46 Seconds** |
 | **Intel Core i9-12900HK** | **360.47 Seconds** |
 | **Intel Core i3-1215U** | **478.81 Seconds** |
 | **AMD Ryzen 7 2700U** | **769.37 Seconds** |

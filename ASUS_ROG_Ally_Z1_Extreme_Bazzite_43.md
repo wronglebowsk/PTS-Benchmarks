@@ -109,3 +109,17 @@ Real-world benchmark simulating developer operations by timing massive git repos
 | Metric | Result |
 | :--- | :--- |
 | **Time To Complete** | 30.54 Seconds |
+
+---
+
+### 11. 3D Rendering (`pts/blender`)
+Real-world benchmark simulating heavy 3D rendering tasks using standard test scenes on the CPU.
+
+| Scene | Time (Seconds) |
+| :--- | :--- |
+| **BMW27** | 234.46 Seconds |
+| **Junkshop** | 283.49 Seconds |
+| **Fishy Cat** | 298.31 Seconds |
+| **Classroom** | 551.28 Seconds |
+| **Pabellon Barcelona** | 747.48 Seconds |
+| **Barbershop** | 2095.43 Seconds |
