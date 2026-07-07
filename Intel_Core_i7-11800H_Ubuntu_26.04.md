@@ -25,6 +25,16 @@ These benchmarks reflect the baseline synthetic compute capabilities.
 
 ---
 
+### 2. Storage I/O Speeds (`pts/fio`)
+Measurements of the internal NVMe storage limits using Random Read, IO_uring, 4KB Block Size.
+
+| Direct I/O | Result |
+| :--- | :--- |
+| **Yes** | 2201 MB/s (563,625 IOPS) |
+| **No (Buffered)** | 1137 MB/s (291,000 IOPS) |
+
+---
+
 ### 2. Intel Energy Performance Preference (EPP) Scaling
 Testing how the hardware scaling hint (EPP) affects heavy, sustained multi-core workloads. Tests were cycled 3 times each across `pts/sysbench` and `pts/stream` for each state.
 
@@ -65,24 +75,25 @@ Synthetic measurement of database insertion and transaction speeds across varyin
 
 ---
 
-### 5. Sustained Compilation (`pts/build-llvm`)
-A test of the system's sustained multi-thread performance compiling the LLVM codebase from source.
+### 5. Sustained Compilation (`pts/build-linux-kernel` & `pts/build-llvm`)
+A test of the system's sustained multi-thread performance compiling the Linux Kernel (defconfig) and LLVM codebase from source.
 
 | Build System | Time (Seconds) |
 | :--- | :--- |
-| **Ninja** | 1,172.86s |
-| **Unix Makefiles** | 1,202.72s |
+| **Linux Kernel (defconfig)** | 191.87s |
+| **LLVM (Ninja)** | 1,172.86s |
+| **LLVM (Unix Makefiles)** | 1,202.72s |
 
 ---
 
 ### 6. Pure Compute & Cryptography (`pts/hashcat` & `pts/compress-7zip`)
-Tests of raw mathematical throughput and integer math capabilities. *(Note: Hashcat execution failed due to a missing 7z dependency in the test suite).*
+Tests of raw mathematical throughput and integer math capabilities. *(Note: Hashcat execution failed due to a missing OpenCL runtime).*
 
 | Metric | Result |
 | :--- | :--- |
 | **7-Zip Compression** | 64,554 MIPS |
 | **7-Zip Decompression** | 62,711 MIPS |
-| **Hashcat (MD5)** | N/A (Failed Install) |
+| **Hashcat (MD5)** | N/A (Execution Failed) |
 
 ---
 

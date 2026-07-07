@@ -84,7 +84,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i9-12900HK** | **417 MB/s (102,000 IOPS)** | **427 MB/s (104,000 IOPS)** |
 | **AMD Ryzen 7 2700U** (Toshiba XG5 Gen3 x4) | **441 MB/s (112,750 IOPS)** | **288 MB/s (73,733 IOPS)** |
 | **Apple Mac M3 (16GB)** | **2232 MB/s (571,333 IOPS)** | **2241 MB/s (573,667 IOPS)** |
-| **Intel Core i7-11800H** | *N/A (Skipped)* | *N/A (Skipped)* |
+| **Intel Core i7-11800H** | **2201 MB/s (563,625 IOPS)** | **1137 MB/s (291,000 IOPS)** |
 
 ### Sustained Multi-Core Compute (`pts/build-linux-kernel`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the Linux Kernel from source.*
@@ -99,7 +99,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Steam Deck (Van Gogh)** | **380.48 Seconds** |
 | **Intel Core i3-1215U** | **398.94 Seconds** |
 | **AMD Ryzen 7 2700U** | **762.20 Seconds** |
-| **Intel Core i7-11800H** | *N/A (Failed Install)* |
+| **Intel Core i7-11800H** | **191.88 Seconds** |
 
 ### Audio AI Processing & TTS (`pts/whisper-cpp` & `pts/espeak`)
 *Real-world STT (Speech-to-Text) inference speed and Text-To-Speech synthesis executed on the CPU.*
@@ -139,7 +139,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i9-12900HK** | *N/A (Missing OpenCL)* | **39,125 MIPS** | **21,025 MIPS** |
 | **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* | **64,897 MIPS** | **43,755 MIPS** |
 | **AMD Ryzen 7 2700U** | *N/A (OpenCL Unsupported)* | **19,026 MIPS** | **15,615 MIPS** |
-| **Intel Core i7-11800H** | *N/A (Failed Install)* | **64,554 MIPS** | **62,711 MIPS** |
+| **Intel Core i7-11800H** | *N/A (Execution Failed)* | **64,554 MIPS** | **62,711 MIPS** |
 
 ### Database Insertion Speed (`pts/sqlite`)
 *Synthetic measurement of database insertion and transaction speeds.*
