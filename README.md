@@ -117,6 +117,11 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ### Database Insertion Speed (`pts/sqlite`)
 *Synthetic measurement of database insertion and transaction speeds.*
 
+> [!NOTE]
+> **SQLite Configuration Notice**
+> Our standardized sprint tests database insertion speeds using two thread configurations:
+> * **Threads:** 4 and 8
+
 | Device | 4 Threads | 8 Threads |
 | :--- | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **2.53 Seconds** | **4.29 Seconds** |
@@ -124,6 +129,10 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 
 ### Sustained Compilation (`pts/build-llvm`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the LLVM codebase from source.*
+
+> [!NOTE]
+> **LLVM Configuration Notice**
+> This benchmark tests sustained compilation using the standard `Unix Makefiles` build system configuration.
 
 | Device | Build Time (Unix Makefiles) |
 | :--- | :--- |
@@ -133,6 +142,12 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ### CPU Ray Tracing (`pts/c-ray`)
 *A simple, multi-threaded raytracer testing floating-point CPU performance.*
 
+> [!NOTE]
+> **C-Ray Configuration Notice**
+> Our standardized sprint tests floating-point throughput at three specific rendering scales:
+> * **Resolutions:** 1080p, 4K, 5K
+> * **Rays Per Pixel:** 16
+
 | Device | 1080p | 4K | 5K |
 | :--- | :--- | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **81.55 Seconds** | **323.51 Seconds** | **586.34 Seconds** |
@@ -140,12 +155,20 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ### Single-Thread PHP Scripting (`pts/phpbench`)
 *A benchmark suite testing the raw execution speed of the PHP engine.*
 
+> [!NOTE]
+> **PHPBench Configuration Notice**
+> This benchmark has a single default execution profile. No interactive configuration is required; it defaults to a standard script suite.
+
 | Device | PHPBench Score |
 | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **1,086,652 Score** |
 
 ### Developer Git Commands (`pts/git`)
 *Real-world benchmark simulating developer operations by timing massive git repository commands.*
+
+> [!NOTE]
+> **Git Configuration Notice**
+> This benchmark executes a fixed script of common Git commands (like `git gc` and `git diff`). No interactive configuration is required.
 
 | Device | Time To Complete |
 | :--- | :--- |
