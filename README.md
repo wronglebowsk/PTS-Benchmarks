@@ -119,3 +119,24 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Build Time (Unix Makefiles) |
 | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **1071.325 Seconds** |
+
+### CPU Ray Tracing (`pts/c-ray`)
+*A simple, multi-threaded raytracer testing floating-point CPU performance.*
+
+| Device | 1080p | 4K | 5K |
+| :--- | :--- | :--- | :--- |
+| **Apple Mac M3 (16GB)** | **81.55 Seconds** | **323.51 Seconds** | **586.34 Seconds** |
+
+### Single-Thread PHP Scripting (`pts/phpbench`)
+*A benchmark suite testing the raw execution speed of the PHP engine.*
+
+| Device | PHPBench Score |
+| :--- | :--- |
+| **Apple Mac M3 (16GB)** | **1,086,652 Score** |
+
+### Developer Git Commands (`pts/git`)
+*Real-world benchmark simulating developer operations by timing massive git repository commands.*
+
+| Device | Time To Complete |
+| :--- | :--- |
+| **Apple Mac M3 (16GB)** | **35.35 Seconds** |
