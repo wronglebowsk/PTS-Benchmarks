@@ -15,7 +15,7 @@
 - **Stream Scale:** 34,486.9 MB/s
 - **Stream Triad:** 35,915.2 MB/s
 - **Stream Add:** 35,696.6 MB/s
-- **VKMark:** N/A (Failed Headless)
+- **VKMark:** 9,786 (Headless KMS)
 
 ## Audio AI Processing (Whisper.cpp)
 *Input: 2016 State of the Union (~60m audio)*

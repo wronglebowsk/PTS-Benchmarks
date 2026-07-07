@@ -59,7 +59,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i3-1215U** | **11,524** |
 | **AMD Ryzen 7 2700U** | **3,804** |
 | **ASUS ROG Ally (Z1 Extreme)** | *N/A (Headless)* |
-| **Intel Core i9-12900HK** | *N/A (Headless)* |
+| **Intel Core i9-12900HK** | **9,786 (KMS)** |
 | **Intel Core i7-11800H** | *N/A (Headless)* |
 | **Steam Deck (Van Gogh)** | *N/A (Headless)* |
 | **Intel N100** | *N/A (Headless)* |
