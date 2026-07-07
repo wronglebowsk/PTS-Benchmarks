@@ -87,6 +87,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | Build Time (defconfig) |
 | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **218.37 Seconds** |
+| **Steam Deck (Van Gogh)** | **380.48 Seconds** |
 | **AMD Ryzen 7 2700U** | **762.20 Seconds** |
 
 ### Audio AI Processing (`pts/whisper-cpp`)
@@ -96,6 +97,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | 2016 State of the Union (~60m) | **206.08 Seconds** |
 | **Intel Core i9-12900HK** | 2016 State of the Union (~60m) | **678.41 Seconds** |
+| **Steam Deck (Van Gogh)** | 2016 State of the Union (~60m) | *N/A (Execution Failed)* |
 | **AMD Ryzen 7 2700U** | 2016 State of the Union (~60m) | **1,215.74 Seconds** |
 
 ### Pure Compute & Cryptography (`pts/hashcat` & `pts/compress-7zip`)
