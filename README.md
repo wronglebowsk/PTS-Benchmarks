@@ -105,6 +105,13 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Steam Deck (Van Gogh)** | *N/A (Execution Failed)* | *N/A* |
 | **AMD Ryzen 7 2700U** | **1,215.74 Seconds** | *N/A* |
 
+### AI Inference (`pts/openvino`)
+*Real-world AI model inferences across various topologies natively executed on the CPU using FP16 and INT8.*
+
+| Device | Face Detection FP16 (FPS) | Vehicle Detection FP16 (FPS) |
+| :--- | :--- | :--- |
+| **Steam Deck (Van Gogh)** | **0.43 FPS** | **42.71 FPS** |
+
 ### Pure Compute & Cryptography (`pts/hashcat` & `pts/compress-7zip`)
 *Tests of raw mathematical throughput, integer math capabilities, and OpenCL compute speeds.*
 
