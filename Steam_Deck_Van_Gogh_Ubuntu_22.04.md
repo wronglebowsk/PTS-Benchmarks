@@ -25,8 +25,8 @@
 * **Status:** N/A (Headless Container Execution Unsupported)
 
 ### pts/fio (Storage I/O)
-* **Note:** Did not complete full standard suite due to 1,561 permutations.
-* **Random Read (1MB Block Size, 1 Job, Sync Engine, Buffered):** 453 MB/s
+* **Random Read (4KB Block Size, 1 Job, IO_uring Engine, Direct):** 376 MB/s
+* **Random Read IOPS (4KB Block Size, 1 Job, IO_uring Engine, Direct):** 96,273 IOPS
 
 ### pts/build-linux-kernel (Sustained Compilation)
 * **Build (defconfig):** 380.48 Seconds
@@ -39,3 +39,21 @@
 
 ### pts/whisper-cpp (Audio AI)
 * **Status:** Failed to execute (E: error: no input files specified)
+
+### pts/phpbench (PHP Benchmark Suite)
+* **Score:** 586,677
+
+### pts/git (Time To Complete Common Git Commands)
+* **Time:** 66.185 Seconds
+
+### pts/sqlite (SQLite Database)
+* **Threads / Copies 4:** 38.939 Seconds
+* **Threads / Copies 8:** 39.868 Seconds
+
+### pts/c-ray (Ray Tracing)
+* **1080p - Rays Per Pixel: 16:** 244.157 Seconds
+* **4K - Rays Per Pixel: 16:** 975.029 Seconds
+* **5K - Rays Per Pixel: 16:** 1731.532 Seconds
+
+### pts/build-llvm (Timed LLVM Compilation)
+* **Build System: Unix Makefiles:** 3283.867 Seconds
