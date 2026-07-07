@@ -81,7 +81,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | Device | FIO Random Read (Direct) | FIO Random Read (Buffered) |
 | :--- | :--- | :--- |
 | **Apple Mac M3 (16GB)** | **2232 MB/s (571,333 IOPS)** | **2241 MB/s (573,667 IOPS)** |
-| **Intel Core i7-11800H** | **2201 MB/s (563,625 IOPS)** | **1137 MB/s (291,000 IOPS)** |
+| **Intel Core i7-11800H** (Samsung 990 PRO Gen4 x4) | **2201 MB/s (563,625 IOPS)** | **1137 MB/s (291,000 IOPS)** |
 | **Intel Core i3-1215U** | **866 MB/s (221,733 IOPS)** | **519 MB/s (132,867 IOPS)** |
 | **ASUS ROG Ally (Z1 Extreme)** | **738 MB/s (189,000 IOPS)** | **528 MB/s (135,000 IOPS)** |
 | **AMD Ryzen 7 2700U** (Toshiba XG5 Gen3 x4) | **441 MB/s (112,750 IOPS)** | **288 MB/s (73,733 IOPS)** |
