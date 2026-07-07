@@ -25,8 +25,28 @@
 ### Sustained Multi-Core Compute (`pts/build-linux-kernel`)
 - **defconfig**: 398.940 Seconds
 
-### Audio AI Processing (`pts/whisper-cpp`)
+### Audio AI Processing & TTS (`pts/whisper-cpp` & `pts/espeak`)
 - **ggml-base.en**: 698.03 Seconds
+- **eSpeak TTS**: 53.20 Seconds
+
+### Storage I/O Speeds (`pts/fio`)
+- **Random Read (Buffered)**: 519 MB/s (132,867 IOPS)
+- **Random Read (Direct)**: 866 MB/s (221,733 IOPS)
+
+### Database Insertion Speed (`pts/sqlite`)
+- **4 Threads**: 6.97 Seconds
+- **8 Threads**: 8.62 Seconds
+
+### CPU Ray Tracing (`pts/c-ray`)
+- **1080p**: 320.18 Seconds
+- **4K**: 1285.04 Seconds
+- **5K**: 2285.50 Seconds
+
+### Single-Thread PHP Scripting (`pts/phpbench`)
+- **PHPBench Score**: 547,163
+
+### Developer Git Commands (`pts/git`)
+- **Time To Complete**: 82.69 Seconds
 
 ## Detailed EPP Scaling Analysis
 
