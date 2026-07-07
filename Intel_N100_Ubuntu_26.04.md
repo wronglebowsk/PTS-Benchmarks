@@ -23,3 +23,15 @@
 | **`balance_performance`** | 19,706.8 MB/s | 9,167.55 MiB/sec | 8,645.61 Events/Sec |
 | **`balance_power`** | 18,242.8 MB/s | 7,271.13 MiB/sec | 6,762.43 Events/Sec |
 | **`power`** | 8,137.5 MB/s | 3,336.52 MiB/sec | 3,334.48 Events/Sec |
+
+## Sustained Multi-Core Compute (Linux Kernel)
+
+| Metric | Score |
+| --- | --- |
+| **Build Time (defconfig)** | 2,795.50 Seconds |
+
+## Audio AI Processing (Whisper.cpp)
+
+| Metric | Score |
+| --- | --- |
+| **Transcription Time (ggml-base.en)** | 4,914.43 Seconds |

@@ -102,6 +102,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i3-1215U** | **398.94 Seconds** |
 | **AMD Ryzen 7 2700U** | **762.20 Seconds** |
 | **Intel Core i7-11800H** | **191.88 Seconds** |
+| **Intel N100** | **2,795.50 Seconds** |
 
 ### Audio AI Processing & TTS (`pts/whisper-cpp` & `pts/espeak`)
 *Real-world STT (Speech-to-Text) inference speed and Text-To-Speech synthesis executed on the CPU.*
@@ -119,6 +120,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Steam Deck (Van Gogh)** | *N/A (Execution Failed)* | *N/A* |
 | **Intel Core i7-11800H** | *N/A (Execution Failed)* | **25.13 Seconds** |
 | **AMD Ryzen 7 2700U** | **1,215.74 Seconds** | **40.69 Seconds** |
+| **Intel N100** | **4,914.43 Seconds** | *N/A* |
 
 ### AI Inference (`pts/openvino`)
 *Real-world AI model inferences across various topologies natively executed on the CPU using FP16 and INT8.*
