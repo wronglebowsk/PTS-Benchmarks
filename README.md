@@ -115,8 +115,8 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i9-12900HK** | **678.41 Seconds** | **45.22 Seconds** |
 | **Intel Core i3-1215U** | **698.03 Seconds** | *N/A* |
 | **Steam Deck (Van Gogh)** | *N/A (Execution Failed)* | *N/A* |
-| **AMD Ryzen 7 2700U** | **1,215.74 Seconds** | *N/A* |
 | **Intel Core i7-11800H** | *N/A (Execution Failed)* | **25.13 Seconds** |
+| **AMD Ryzen 7 2700U** | **1,215.74 Seconds** | **40.69 Seconds** |
 
 ### AI Inference (`pts/openvino`)
 *Real-world AI model inferences across various topologies natively executed on the CPU using FP16 and INT8.*
@@ -181,6 +181,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Apple Mac M3 (16GB)** | **81.55 Seconds** | **323.51 Seconds** | **586.34 Seconds** |
 | **Intel Core i7-11800H** | **100.82 Seconds** | **407.97 Seconds** | **726.93 Seconds** |
 | **Intel Core i9-12900HK** | **152.96 Seconds** | **613.34 Seconds** | **1090.25 Seconds** |
+| **AMD Ryzen 7 2700U** | **350.92 Seconds** | *N/A* | *N/A* |
 
 ### Single-Thread PHP Scripting (`pts/phpbench`)
 *A benchmark suite testing the raw execution speed of the PHP engine.*
@@ -194,6 +195,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Apple Mac M3 (16GB)** | **1,086,652 Score** |
 | **Intel Core i7-11800H** | **1,058,417 Score** |
 | **Intel Core i9-12900HK** | **573,371 Score** |
+| **AMD Ryzen 7 2700U** | **374,353 Score** |
 
 ### Developer Git Commands (`pts/git`)
 *Real-world benchmark simulating developer operations by timing massive git repository commands.*
@@ -207,3 +209,4 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Apple Mac M3 (16GB)** | **35.35 Seconds** |
 | **Intel Core i7-11800H** | **40.50 Seconds** |
 | **Intel Core i9-12900HK** | **83.23 Seconds** |
+| **AMD Ryzen 7 2700U** | **59.49 Seconds** |

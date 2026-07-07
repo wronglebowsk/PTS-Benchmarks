@@ -27,8 +27,9 @@
 ### 5. Sustained Multi-Core Compute (`pts/build-linux-kernel`)
 * **Build Time (defconfig):** 762.20 Seconds
 
-### 6. Audio AI Processing (`pts/whisper-cpp`)
-* **Transcription Time (2016 State of the Union):** 1,215.74 Seconds
+### 6. Audio Processing & TTS (`pts/whisper-cpp` & `pts/espeak`)
+* **Transcription Time (Whisper):** 1,215.74 Seconds
+* **Synthesis Time (eSpeak):** 40.69 Seconds
 
 ### 7. AI Inference (`pts/openvino`)
 * **Face Detection FP16 (Latency):** 0.32 FPS (3,098.42 ms)
@@ -41,3 +42,12 @@
 
 ### 9. Database Insertion Speed (`pts/sqlite`)
 * **1 Thread:** 13.920 Seconds
+
+### 10. CPU Ray Tracing (`pts/c-ray`)
+* **1080p (16 Rays):** 350.92 Seconds
+
+### 11. Single-Thread PHP Scripting (`pts/phpbench`)
+* **PHPBench Score:** 374,353
+
+### 12. Developer Git Commands (`pts/git`)
+* **Time To Complete:** 59.49 Seconds
