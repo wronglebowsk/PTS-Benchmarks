@@ -42,6 +42,13 @@
 - **4K**: 1285.04 Seconds
 - **5K**: 2285.50 Seconds
 
+### 3D Game Benchmarking (`pts/xonotic`)
+- **1024x768 (Low)**: 17.61 FPS
+
+### 3D Rendering (`pts/blender`)
+- **BMW27 (CPU-Only)**: 478.81 Seconds
+- **BMW27 (Intel oneAPI)**: Failed (Unsupported)
+
 ### Single-Thread PHP Scripting (`pts/phpbench`)
 - **PHPBench Score**: 547,163
 
