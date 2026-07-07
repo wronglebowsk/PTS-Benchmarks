@@ -86,6 +86,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **ASUS ROG Ally (Z1 Extreme)** (Micron 2400 Gen4 x4) | **738 MB/s (189,000 IOPS)** | **528 MB/s (135,000 IOPS)** |
 | **AMD Ryzen 7 2700U** (Toshiba XG5 Gen3 x4) | **441 MB/s (112,750 IOPS)** | **288 MB/s (73,733 IOPS)** |
 | **Intel Core i9-12900HK** (Samsung 990 PRO Gen4 x4) | **417 MB/s (102,000 IOPS)** | **427 MB/s (104,000 IOPS)** |
+| **Steam Deck (Van Gogh)** (OM3PDP3512B-A01 Gen3 x4) | **376 MB/s (96,273 IOPS)** | **355 MB/s (90,920 IOPS)** |
 
 ### Sustained Multi-Core Compute (`pts/build-linux-kernel`)
 *A brutal test of the system's thermal limits and sustained multi-thread performance compiling the Linux Kernel from source.*
@@ -155,6 +156,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Apple Mac M3 (16GB)** | **2.53 Seconds** | **4.29 Seconds** |
 | **Intel Core i3-1215U** | **6.97 Seconds** | **8.62 Seconds** |
 | **ASUS ROG Ally (Z1 Extreme)** | **23.33 Seconds** | **30.59 Seconds** |
+| **Steam Deck (Van Gogh)** | **38.94 Seconds** | **39.87 Seconds** |
 | **Intel Core i7-11800H** | **85.83 Seconds** | **84.49 Seconds** |
 | **Intel Core i9-12900HK** | **91.27 Seconds** | **90.55 Seconds** |
 
@@ -170,6 +172,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Apple Mac M3 (16GB)** | **1071.325 Seconds** |
 | **Intel Core i7-11800H** | **1202.723 Seconds** |
 | **ASUS ROG Ally (Z1 Extreme)** | **1421.00 Seconds** |
+| **Steam Deck (Van Gogh)** | **3283.87 Seconds** |
 
 ### CPU Ray Tracing (`pts/c-ray`)
 *A simple, multi-threaded raytracer testing floating-point CPU performance.*
@@ -186,6 +189,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Intel Core i7-11800H** | **100.82 Seconds** | **407.97 Seconds** | **726.93 Seconds** |
 | **ASUS ROG Ally (Z1 Extreme)** | **112.37 Seconds** | **456.53 Seconds** | **812.30 Seconds** |
 | **Intel Core i9-12900HK** | **152.96 Seconds** | **613.34 Seconds** | **1090.25 Seconds** |
+| **Steam Deck (Van Gogh)** | **244.16 Seconds** | **975.03 Seconds** | **1731.53 Seconds** |
 | **Intel Core i3-1215U** | **320.18 Seconds** | **1285.04 Seconds** | **2285.50 Seconds** |
 | **AMD Ryzen 7 2700U** | **350.92 Seconds** | *N/A* | *N/A* |
 
@@ -202,6 +206,7 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Apple Mac M3 (16GB)** | **1,086,652 Score** |
 | **Intel Core i7-11800H** | **1,058,417 Score** |
 | **Intel Core i9-12900HK** | **573,371 Score** |
+| **Steam Deck (Van Gogh)** | **586,677 Score** |
 | **Intel Core i3-1215U** | **547,163 Score** |
 | **AMD Ryzen 7 2700U** | **374,353 Score** |
 
@@ -218,5 +223,6 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 | **Apple Mac M3 (16GB)** | **35.35 Seconds** |
 | **Intel Core i7-11800H** | **40.50 Seconds** |
 | **AMD Ryzen 7 2700U** | **59.49 Seconds** |
+| **Steam Deck (Van Gogh)** | **66.19 Seconds** |
 | **Intel Core i3-1215U** | **82.69 Seconds** |
 | **Intel Core i9-12900HK** | **83.23 Seconds** |
