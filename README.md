@@ -118,6 +118,10 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ### AI Inference (`pts/openvino`)
 *Real-world AI model inferences across various topologies natively executed on the CPU using FP16 and INT8.*
 
+> [!NOTE]
+> **OpenVINO Configuration Notice**
+> To avoid hours of unnecessary benchmarking, please ensure you only select and run the `Face Detection Retail` and `Vehicle Detection` topologies.
+
 | Device | Face Detection FP16 (FPS) | Vehicle Detection FP16 (FPS) |
 | :--- | :--- | :--- |
 | **Steam Deck (Van Gogh)** | **0.43 FPS** | **42.71 FPS** |
