@@ -82,3 +82,42 @@ Tests of raw mathematical throughput and integer math capabilities. *(Note: Hash
 | **7-Zip Compression** | 64,554 MIPS |
 | **7-Zip Decompression** | 62,711 MIPS |
 | **Hashcat (MD5)** | N/A (Failed Install) |
+
+---
+
+### 7. CPU Ray Tracing (`pts/c-ray`)
+A simple, multi-threaded raytracer testing floating-point CPU performance at 16 Rays Per Pixel.
+
+| Resolution | Time (Seconds) |
+| :--- | :--- |
+| **1080p** | 100.82s |
+| **4K** | 407.97s |
+| **5K** | 726.93s |
+
+---
+
+### 8. Single-Thread PHP Scripting (`pts/phpbench`)
+A benchmark suite testing the raw execution speed of the PHP engine.
+
+| Metric | Result |
+| :--- | :--- |
+| **PHPBench Score** | 1,058,417 Score |
+
+---
+
+### 9. Developer Git Commands (`pts/git`)
+Real-world benchmark simulating developer operations by timing massive git repository commands.
+
+| Metric | Time (Seconds) |
+| :--- | :--- |
+| **Time To Complete** | 40.50s |
+
+---
+
+### 10. Audio AI Processing & TTS (`pts/whisper-cpp` & `pts/espeak`)
+Real-world STT (Speech-to-Text) inference speed and Text-To-Speech synthesis executed on the CPU.
+
+| Metric | Time (Seconds) |
+| :--- | :--- |
+| **Whisper Transcription** | N/A (Execution Failed) |
+| **eSpeak Synthesis** | 25.13s |
