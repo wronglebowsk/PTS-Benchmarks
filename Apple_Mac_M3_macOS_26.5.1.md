@@ -40,3 +40,10 @@
 | :--- | :--- | :--- |
 | **FIO** | Random Read (Direct I/O, 4KB, 1 Thread) | 2,232 MB/s (571,333 IOPS) |
 | **FIO** | Random Read (Buffered, 4KB, 1 Thread) | 2,241 MB/s (573,667 IOPS) |
+
+## Audio AI Processing & TTS
+
+| Benchmark | Test Configuration | Score |
+| :--- | :--- | :--- |
+| **eSpeak** | Text-To-Speech Synthesis | 19.54 Seconds |
+| **Whisper.cpp** | STT Inference | *N/A (macOS Unsupported)* |

@@ -97,9 +97,14 @@ If you are instructing an AI agent to run this benchmark on a new device, provid
 ### Audio AI Processing & TTS (`pts/whisper-cpp` & `pts/espeak`)
 *Real-world STT (Speech-to-Text) inference speed and Text-To-Speech synthesis executed on the CPU.*
 
+> [!NOTE]
+> **Audio Processing Configuration Notice**
+> These benchmarks use a standard execution profile parsing fixed datasets (e.g., Gutenberg text). No interactive configuration is required.
+
 | Device | Whisper Transcription Time | eSpeak Synthesis Time |
 | :--- | :--- | :--- |
 | **ASUS ROG Ally (Z1 Extreme)** | **206.08 Seconds** | **22.33 Seconds** |
+| **Apple Mac M3 (16GB)** | *N/A (macOS Unsupported)* | **19.54 Seconds** |
 | **Intel Core i9-12900HK** | **678.41 Seconds** | *N/A* |
 | **Intel Core i3-1215U** | **698.03 Seconds** | *N/A* |
 | **Steam Deck (Van Gogh)** | *N/A (Execution Failed)* | *N/A* |
